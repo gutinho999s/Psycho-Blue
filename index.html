@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>      
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>Psycho Blue — vídeos que prendem sua atenção</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Psycho Blue início">
+      <span class="brand-mark">Ψ</span><span>PSYCHO<span class="blue"> BLUE</span></span>
+    </a>
+    <label class="search">
+      <span aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search" placeholder="Pesquisar vídeos ou criadores..." aria-label="Pesquisar">
+    </label>
+    <button class="upload-btn" id="uploadOpen">＋ <span>Publicar</span></button>
+  </header>
+
+  <aside class="sidebar">
+    <button class="nav-item active" data-view="forYou">⌂ <span>Para você</span></button>
+    <button class="nav-item" data-view="following">♡ <span>Seguindo</span></button>
+    <button class="nav-item" data-view="discover">⌕ <span>Descobrir</span></button>
+    <div class="side-line"></div>
+    <p class="side-label">SUA CONTA</p>
+    <button class="nav-item" id="profileButton">◉ <span>Meu perfil</span></button>
+    <div class="side-card">
+      <div class="orb"></div>
+      <strong>Entre no clima.</strong>
+      <p>Vídeos curtos. Ideias enormes.</p>
+      <small>PSYCHO BLUE · BETA</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="feed-heading">
+      <div>
+        <p class="eyebrow">SEU PRÓXIMO VÍDEO FAVORITO</p>
+        <h1 id="feedTitle">Para você<span>.</span></h1>
+      </div>
+      <div class="feed-tabs">
+        <button class="tab active" data-view="forYou">Em alta</button>
+        <button class="tab" data-view="following">Seguindo</button>
+      </div>
+    </div>
+    <div id="videoFeed" class="video-feed" aria-live="polite"></div>
+    <p class="footnote">Psycho Blue é um projeto demonstrativo. Os vídeos de exemplo usam arquivos públicos de demonstração.</p>
+  </main>
+
+  <div class="modal-backdrop" id="uploadModal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="uploadClose" aria-label="Fechar">×</button>
+      <p class="eyebrow">CRIE ALGO NOVO</p>
+      <h2 id="modalTitle">Publicar vídeo</h2>
+      <p class="modal-copy">Escolha um vídeo disponível no seu dispositivo. Esta demonstração reproduz o arquivo localmente; ainda não envia o vídeo para um servidor.</p>
+      <label class="field-label" for="videoFile">Arquivo de vídeo</label>
+      <input id="videoFile" type="file" accept="video/*">
+      <label class="field-label" for="videoCaption">Legenda</label>
+      <input id="videoCaption" type="text" maxlength="120" placeholder="Escreva uma legenda...">
+      <button class="primary-btn" id="previewUpload">Pré-visualizar publicação</button>
+      <p id="uploadMessage" class="upload-message"></p>
+    </section>
+  </div>
+
+  <nav class="mobile-nav">
+    <button class="active" data-view="forYou">⌂<span>Início</span></button>
+    <button data-view="discover">⌕<span>Descobrir</span></button>
+    <button id="mobileUpload">＋<span>Publicar</span></button>
+    <button id="mobileProfile">◉<span>Perfil</span></button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+                                    </html>
+                                    
